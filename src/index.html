@@ -12,11 +12,70 @@
 <body class="body">
   <header class="header">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-between">
+        <div class="col col-md-3 col-lg-2">
+          <img class="header__logo" src="<%=require('./images/header-logo.png')%>" alt="Логотип Apple Pay">
+        </div>
 
+        <div class="col align-items-center justify-content-end header__nav">
+          <nav class="nav">
+            <button class="nav__button"></button>
+
+            <ul class="nav__list nav__list_hidden">
+              <li class="nav__item">
+                <a href="" class="nav__link">Menu item</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="" class="nav__link">Menu item</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="" class="nav__link">Menu item</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="" class="nav__link">Menu item</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="" class="nav__link">Menu item</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
+
+  <section class="slider container">
+    <div class="row">
+      <div class="col">
+        <div class="carousel slide" id="slider" data-ride="carousel" data-interval="false">
+
+          <div class="carousel-inner slider__inner">
+            <div class="carousel-item active slider__item">
+              <img class="img-fluid slider__img" src="<%=require('./images/slider-img.jpg')%>" alt="Телефон">
+            </div>
+            <div class="carousel-item slider__item">
+              <img class="img-fluid slider__img" src="<%=require('./images/slider-img.jpg')%>" alt="Телефон">
+            </div>
+            <div class="carousel-item slider__item">
+              <img class="img-fluid slider__img" src="<%=require('./images/slider-img.jpg')%>" alt="Телефон">
+            </div>
+          </div>
+
+          <button class="slider__button slider__button_type_prev carousel-control-prev" data-target="#slider" data-slide="prev" title="Предыдущий">
+            <img class="slider__button-img" src="<%=require('./images/slider-angle.svg')%>" alt="Предыдущий">
+          </button>
+          <button class="slider__button slider__button_type_next carousel-control-next" data-target="#slider" data-slide="next" title="Следующий">
+            <img class="slider__button-img" src="<%=require('./images/slider-angle.svg')%>" alt="Следующий">
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 </body>
 
