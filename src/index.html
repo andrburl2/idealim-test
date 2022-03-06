@@ -48,20 +48,40 @@
     </div>
   </header>
 
-  <section class="slider container">
+  <section class="slider container section">
     <div class="row">
       <div class="col">
         <div class="carousel slide" id="slider" data-ride="carousel" data-interval="false">
 
           <div class="carousel-inner slider__inner">
             <div class="carousel-item active slider__item">
-              <img class="img-fluid slider__img" src="<%=require('./images/slider-img.jpg')%>" alt="Телефон">
+              <div class="slider__content col-8">
+                <h3 class="slider__title">Long Header</h3>
+
+                <div class="slider__text-box">
+                  <p class="slider__text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+                </div>
+              </div>
             </div>
+
             <div class="carousel-item slider__item">
-              <img class="img-fluid slider__img" src="<%=require('./images/slider-img.jpg')%>" alt="Телефон">
+              <div class="slider__content col-8">
+                <h3 class="slider__title">Long Header</h3>
+
+                <div class="slider__text-box">
+                  <p class="slider__text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+                </div>
+              </div>
             </div>
+
             <div class="carousel-item slider__item">
-              <img class="img-fluid slider__img" src="<%=require('./images/slider-img.jpg')%>" alt="Телефон">
+              <div class="slider__content col-8">
+                <h3 class="slider__title">Long Header</h3>
+
+                <div class="slider__text-box">
+                  <p class="slider__text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -77,6 +97,106 @@
 
   </section>
 
+  <section class="cards section">
+    <div class="container">
+      <div class="cards__row row">
+        <div class="cards__col col-12 col-sm-6 col-xl-3">
+          <div class="cards__item">
+            <img class="cards__img" src="<%=require('./images/phone.jpg')%>" alt="Фото для карточки">
+
+            <div class="cards__content">
+              <h3 class="cards__title">Card title</h3>
+
+              <p class="cards__text">Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</p>
+
+              <button class="button">Кнопка</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards__col col-12 col-sm-6 col-xl-3">
+          <div class="cards__item">
+            <img class="cards__img" src="<%=require('./images/phone.jpg')%>" alt="Фото для карточки">
+
+            <div class="cards__content">
+              <h3 class="cards__title">Card title</h3>
+
+              <p class="cards__text">Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</p>
+
+              <button class="button">Кнопка</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards__col col-12 col-sm-6 col-xl-3">
+          <div class="cards__item">
+            <img class="cards__img" src="<%=require('./images/phone.jpg')%>" alt="Фото для карточки">
+
+            <div class="cards__content">
+              <h3 class="cards__title">Card title</h3>
+
+              <p class="cards__text">Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</p>
+
+              <button class="button">Кнопка</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards__col col-12 col-sm-6 col-xl-3">
+          <div class="cards__item">
+            <img class="cards__img" src="<%=require('./images/phone.jpg')%>" alt="Фото для карточки">
+
+            <div class="cards__content">
+              <h3 class="cards__title">Card title</h3>
+
+              <p class="cards__text">Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</p>
+
+              <button class="button">Кнопка</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calc container">
+    <div class="row">
+      <div class="col-12 col-lg-6 calc__img-container">
+        <img class="calc__img" src="<%=require('./images/calc-img.jpg')%>" alt="Телефоны">
+      </div>
+
+      <div class="col-12 col-lg-6 calc__content">
+        <h2 class="calc__title">Ensure your phone</h2>
+
+        <div class="calc__select">
+          <div class="calc__option" data-price="24" data-duration="3">
+            <p class="calc__duration">3 mo.</p>
+            <p class="calc__price">$24/month</p>
+          </div>
+          <div class="calc__option calc__option_selected" data-price="22" data-duration="6">
+            <p class="calc__duration">6 mo.</p>
+            <p class="calc__price">$22/month</p>
+          </div>
+          <div class="calc__option" data-price="21" data-duration="12">
+            <p class="calc__duration">12 mo.</p>
+            <p class="calc__price">$21/month</p>
+          </div>
+        </div>
+
+        <div class="calc__result">
+          <p class="calc__result-text">
+            Estimated cost for
+            <b class="calc__result-duration">6</b>
+            months of phone insurance is
+            <b class="calc__result-cost">$142</b>
+          </p>
+          <p class="calc__result-subtitle">(including $10 state fee)</p>
+        </div>
+
+        <button class="button">Proceed to checkout</button>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

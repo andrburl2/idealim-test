@@ -2,9 +2,8 @@ import './styles/index.scss';
 import 'bootstrap';
 import $ from 'jquery';
 
-function showMobileNav() {
-  $('.nav__button').toggleClass('nav__button_active');
-  $('.nav__list').toggleClass('nav__list_hidden');
-}
+import toggleMobileNav from './javascript/mobileNav';
+$('.nav__button').on('click', toggleMobileNav);
 
-$('.nav__button').on('click',showMobileNav);
+import calc from './javascript/calc';
+$('.calc__option').on('click', calc);
