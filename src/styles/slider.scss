@@ -1,0 +1,100 @@
+.slider {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.slider__inner {
+  border-radius: 10px;
+}
+
+.slider__item {
+  width: 100%;
+  max-height: 400px;
+  height: 400px;
+  position: relative;
+  background: url(../images/phone.jpg) center/cover;
+}
+
+.slider__content {
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.slider__title {
+  margin: 0 0 13px;
+  font-weight: 100;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.slider__text-box {
+  padding: 0 0 0 35px;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: #2496ff;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.slider__text {
+  margin: 0;
+  padding: 12px 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.slider__button {
+  width: 10%;
+  opacity: 1;
+  transition: background-color .7s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    background-color: rgba(230, 230, 230, .2);
+  }
+}
+
+.slider__button_type_prev {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 767px) {
+  .slider__item {
+    max-height: 350px;
+  }
+
+  .slider__button-img {
+    width: 18px;
+  }
+
+  .slider__title {
+    margin: 0 0 10px;
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  .slider__text-box {
+    padding: 0 0 0 15px;
+    overflow: hidden;
+  }
+
+  .slider__text {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

@@ -4,4 +4,23 @@
   display: flex;
   align-items: center;
   background: linear-gradient(180deg, #f5f5f5 0%, #ededed 100%);
+  z-index: 100;
+}
+
+.header__logo {
+  object-fit: contain;
+}
+
+.header__nav {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+
+  .header__logo {
+    width: 100px;
+  }
 }

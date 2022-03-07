@@ -1,0 +1,130 @@
+.calc {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.calc__img-container {
+  display: flex;
+}
+
+.calc__img {
+  margin: auto auto 0;
+}
+
+.calc__content {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.calc__title {
+  margin: 0 0 24px;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000;
+}
+
+.calc__select {
+  width: 100%;
+  margin: 0 0 24px;
+  display: flex;
+}
+
+.calc__option {
+  width: calc(33.33% - 16px);
+  margin: 0 24px 0 0;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.calc__option_selected {
+  background: #f0f0f0;
+  border: 1px solid #2496ff;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .15);
+  cursor: auto;
+}
+
+.calc__duration {
+  margin: 0 0 4px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+}
+
+.calc__price {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000;
+}
+
+.calc__result {
+  margin: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calc__result-text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+}
+
+.calc__result-subtitle {
+  margin: 0;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+}
+
+@media screen and (max-width: 991px) {
+  .calc__img-container {
+    padding-top: 25px;
+  }
+
+  .calc__img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .calc__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .calc__title {
+    text-align: center;
+  }
+
+  .calc__select {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calc__option {
+    max-width: 180px;
+    width: 100%;
+    margin: 0 0 15px;
+  }
+}
