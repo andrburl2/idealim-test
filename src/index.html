@@ -12,7 +12,7 @@
 <body class="body">
   <header class="header">
     <div class="container">
-      <div class="row justify-content-between">
+      <div class="row">
         <div class="col col-md-3 col-lg-2">
           <img class="header__logo" src="<%=require('./images/header-logo.png')%>" alt="Логотип Apple Pay">
         </div>
@@ -197,6 +197,36 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 footer__column">
+          <p class="footer__copyright">&copy; 2022, All Rights Reserved, inc.</p>
+        </div>
+
+        <div class="col-12 col-lg footer__column">
+          <p class="footer__text">3000 Tannery Way Santa Clara, CA 95054 USA</p>
+          <p class="footer__text">Phone: <a class="footer__link" href="tel:1-800-555-55-55">1-800-555-55-55</a></p>
+          <p class="footer__text">e-mail: <a class="footer__link" href="mailto: mail@corporation.com">mail@corporation.com</a></p>
+        </div>
+
+        <div class="col-12 col-lg-2 footer__icon-container">
+          <a class="footer__icon-link" href="">
+            <img class="footer__icon" src="<%=require('./images/footer/facebook-icon.svg')%>" alt="Лого facebook">
+          </a>
+
+          <a class="footer__icon-link" href="">
+            <img class="footer__icon" src="<%=require('./images/footer/instagram-icon.svg')%>" alt="Лого instagram">
+          </a>
+
+          <a class="footer__icon-link" href="">
+            <img class="footer__icon" src="<%=require('./images/footer/twitter-icon.svg')%>" alt="Лого twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
